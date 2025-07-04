@@ -1,0 +1,54 @@
+/* styles/larger.css */
+
+@media screen and (min-width: 768px) {
+    header {
+      grid-template-columns: auto auto 1fr auto;
+    }
+  
+    nav {
+      display: block !important;
+    }
+  
+    #menu {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      background: none;
+    }
+  
+    nav li {
+      background: none;
+      padding: 0;
+    }
+  
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffc107;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+  
+    .course-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+  
+    .filters {
+      display: flex;
+      gap: 1rem;
+    }
+  }

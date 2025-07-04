@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 course home page for frontend development projects." />
+  <meta name="author" content="Jackson Osei Kumi" />
+  <title>WDD 231 Home</title>
+
+  <!-- Normalize & Custom Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- JavaScript Files -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/lastModified.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site Logo" width="50">
+    <span>Jackson Osei Kumi</span>
+    <button id="menu" aria-label="Open Navigation Menu">☰</button>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final-index.html">Final</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>Certificate Courses</h2>
+      <div class="filters">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="course-container"></div>
+      <p id="credit-total"></p>
+    </section>
+
+    <section>
+      <h2>About This Site</h2>
+      <p>This site is built for the WDD 231 course and showcases dynamic front-end development techniques using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>HTML5 & Semantic Layout</li>
+        <li>CSS Grid & Flexbox</li>
+        <li>Responsive Design Principles</li>
+        <li>JavaScript ES6+</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://twitter.com/yourhandle" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+    </div>
+    <p>&copy; <span id="year"></span> | Jackson Osei Kumi | Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

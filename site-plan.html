@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site plan for the WDD 231 frontend web development course." />
+  <meta name="author" content="Jackson Osei Kumi" />
+  <title>Site Plan | WDD 231</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/lastModified.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site Logo" width="50">
+    <span>Jackson Osei Kumi</span>
+    <button id="menu" aria-label="Open Navigation Menu">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+        <li><a href="site-plan.html" class="active">Site Plan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Site Plan</h1>
+    <section>
+      <h2>Purpose</h2>
+      <p>This site plan outlines the structure and design for the WDD 231 course website. It provides a blueprint for navigation, layout, and responsive behavior.</p>
+    </section>
+
+    <section>
+      <h2>Target Audience</h2>
+      <p>The target audience includes course instructors, classmates, and potential employers reviewing my frontend web development skills.</p>
+    </section>
+
+    <section>
+      <h2>Color Scheme</h2>
+      <p>Primary color: #0077cc<br>Accent color: #ffc107<br>Text color: #333<br>Background: #f4f4f4</p>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <p>Font: Roboto (Google Fonts). Used for clean readability across all screen sizes.</p>
+    </section>
+
+    <section>
+      <h2>Navigation Plan</h2>
+      <ul>
+        <li>Home</li>
+        <li>Chamber</li>
+        <li>Final</li>
+        <li>Site Plan</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://twitter.com/yourhandle" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+    </div>
+    <p>&copy; <span id="year"></span> | Jackson Osei Kumi | Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
