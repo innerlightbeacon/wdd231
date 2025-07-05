@@ -1,38 +1,47 @@
-/* styles/larger.css */
-
 @media screen and (min-width: 768px) {
     header {
-      grid-template-columns: auto auto 1fr auto;
-    }
-  
-    nav {
-      display: block !important;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      padding: 1rem;
     }
   
     #menu {
       display: none;
     }
   
+    nav {
+      display: block;
+    }
+  
     nav ul {
       display: flex;
       justify-content: flex-end;
-      gap: 1rem;
-      background: none;
+      align-items: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
     }
   
     nav li {
-      background: none;
+      list-style: none;
       padding: 0;
+      margin: 0;
     }
   
     nav a {
       color: white;
       text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
   
-    nav a:hover {
-      text-decoration: underline;
-      color: #ffc107;
+    nav a:hover,
+    nav a:focus {
+      background-color: #ffc107;
+      color: #000;
+      border-radius: 5px;
     }
   
     main {
@@ -45,10 +54,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: start;
+      gap: 1rem;
     }
   
     .filters {
       display: flex;
       gap: 1rem;
+      margin-bottom: 1rem;
     }
   }
+  
