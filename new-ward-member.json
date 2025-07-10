@@ -1,0 +1,29 @@
+{
+    "familyName": "Ofosu",
+    "moveInDate": "2025-06-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Kofi Ofosu",
+        "gender": "Male",
+        "birthdate": "1980-04-20"
+      },
+      {
+        "name": "Ama Ofosu",
+        "gender": "Female",
+        "birthdate": "1983-09-12"
+      },
+      {
+        "name": "Yaw Ofosu",
+        "gender": "Male",
+        "birthdate": "2010-03-30"
+      },
+      {
+        "name": "Afia Ofosu",
+        "gender": "Female",
+        "birthdate": "2013-11-08"
+      }
+    ]
+  }
+  

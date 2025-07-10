@@ -1,0 +1,77 @@
+/* styles/prophets.css */
+
+/* Basic Reset and Font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #0b4c61;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #0b4c61;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+  }
+  
+  /* Cards Grid */
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Individual Prophet Card */
+  #cards section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #cards section:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Prophet Name */
+  #cards h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Image Styling */
+  #cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+  
+  /* Prophet Info Text */
+  #cards p {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+  }
+  
