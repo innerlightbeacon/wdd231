@@ -1,0 +1,191 @@
+/* === CSS VARIABLES === */
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --background-color: #ffffff;
+  --text-color: #1e1e1e;
+  --accent-color: #94d2bd;
+  --card-bg: #f9f9f9;
+  --border-color: #ddd;
+  --link-color: #0077b6;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark {
+  --primary-color: #1e3a8a;
+  --secondary-color: #2563eb;
+  --background-color: #1a1a1a;
+  --text-color: #f3f4f6;
+  --accent-color: #0ea5e9;
+  --card-bg: #2c2c2c;
+  --border-color: #444;
+  --link-color: #93c5fd;
+}
+
+/* === RESET & GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === HEADER & NAVIGATION === */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a.active {
+  color: var(--accent-color);
+}
+
+#menu {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+}
+
+/* === MAIN === */
+main {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer .social img {
+  height: 24px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+/* === FORMS & INPUTS === */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--secondary-color);
+}
+
+/* === UTILITIES === */
+.hidden {
+  display: none !important;
+}
+
+/* === DARK MODE ELEMENTS === */
+body.dark header,
+body.dark footer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+body.dark a {
+  color: var(--link-color);
+}
+
+body.dark nav a.active {
+  color: var(--accent-color);
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #333;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+:root {
+  --primary-color: #004643;
+  --secondary-color: #f9bc60;
+  --background-color: #ffffff;
+  --text-color: #001e1d;
+  --accent-color: #abd1c6;
+  --font-family: 'Ubuntu', sans-serif;
+}
+
+/* Light theme */
+body {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark theme overrides */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+}

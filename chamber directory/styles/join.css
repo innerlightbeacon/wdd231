@@ -1,0 +1,95 @@
+/* join.css */
+
+.join-header,
+.membership-benefits,
+.join-form-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.join-header h2,
+.membership-benefits h3,
+.join-form-section h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.join-header p,
+.membership-benefits ul,
+.join-form-section form {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.membership-benefits ul {
+  list-style: square inside;
+  padding-left: 1rem;
+}
+
+.membership-benefits li {
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+form button {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-output {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .join-header,
+  .membership-benefits,
+  .join-form-section {
+    padding: 1rem;
+  }
+
+  form {
+    gap: 0.75rem;
+  }
+
+  form input,
+  form select,
+  form textarea,
+  form button {
+    width: 100%;
+  }
+}

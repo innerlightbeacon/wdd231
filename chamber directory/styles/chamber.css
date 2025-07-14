@@ -1,0 +1,145 @@
+/* ================================
+   Accra Chamber of Commerce Styles
+   Page-Specific Styles (Home, Discover, Join, etc.)
+   ================================ */
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(to right, rgba(0, 74, 173, 0.8), rgba(0, 194, 203, 0.6)),
+                url('../images/accra-skyline.webp') center/cover no-repeat;
+    color: var(--text-light);
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* CTA (Call to Action) */
+  .cta {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+  }
+  
+  .cta h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta .button {
+    margin-top: 1rem;
+  }
+  
+  /* CARDS SECTION */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+  }
+  
+  /* DIRECTORY TABLE */
+  .directory table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+  }
+  
+  .directory th,
+  .directory td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* IMAGE GALLERY (Discover Page) */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+  }
+  
+  /* FORM STYLES (Join Page) */
+  form {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  
+  /* EVENTS SECTION */
+  .events {
+    margin-top: 2rem;
+  }
+  
+  .events h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* RESPONSIVENESS (optional extra tweaks) */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 1.75rem;
+    }
+  }
+  

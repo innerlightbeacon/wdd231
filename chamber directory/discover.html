@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Accra – Explore the city's culture, history, and events." />
+  <meta name="author" content="Jackson Osei Kumi" />
+  <title>Discover | Accra Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/discover.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Accra Chamber Logo" />
+      <h1>Accra Chamber of Commerce</h1>
+    </div>
+    <button id="menu" aria-label="Menu">☰</button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+      </ul>
+    </nav>
+    <div class="mode-toggle">
+      <label for="mode">🌙</label>
+      <input type="checkbox" id="mode" name="mode" />
+    </div>
+  </header>
+
+  <main>
+    <h2>Discover Accra</h2>
+
+    <section class="history">
+      <h3>History</h3>
+      <p>
+        Accra is one of the oldest and most vibrant cities in West Africa. From its colonial heritage to becoming the capital of Ghana, its journey has been one of cultural richness and economic resilience.
+      </p>
+    </section>
+
+    <section class="demographics">
+      <h3>Demographics</h3>
+      <ul>
+        <li>Population: 2.5 million+</li>
+        <li>Languages: English, Ga, Twi, Ewe</li>
+        <li>Main Religions: Christianity, Islam, Traditional</li>
+        <li>Major Industries: Trade, Services, Tourism, Real Estate</li>
+      </ul>
+    </section>
+
+    <section class="events">
+      <h3>Community Events</h3>
+      <p>
+        Annual festivals like Homowo, the Chale Wote Street Art Festival, and local durbars showcase the city's unique traditions and creativity.
+      </p>
+    </section>
+
+    <section class="gallery">
+      <h3>City Gallery</h3>
+      <div class="image-montage">
+        <img src="images/independence-arch.jpg" alt="Independence Arch" loading="lazy">
+        <img src="images/makola-market.jpg" alt="Makola Market" loading="lazy">
+        <img src="images/art-centre.jpg" alt="Art Centre" loading="lazy">
+        <img src="images/jamestown-lighthouse.jpg" alt="Jamestown Lighthouse" loading="lazy">
+        <img src="images/national-theatre.jpg" alt="National Theatre" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>Accra Chamber of Commerce</strong></p>
+      <p>10 Independence Avenue, Accra, Ghana</p>
+      <p>Email: info@accracoc.org | Tel: +233 555 123 456</p>
+    </div>
+    <div class="social">
+      <img src="images/github.svg" alt="GitHub" />
+      <img src="images/twitter.svg" alt="Twitter" />
+      <img src="images/linkedin.svg" alt="LinkedIn" />
+    </div>
+    <div class="project-info">
+      <p>WDD231 Class Project | Jackson Osei Kumi</p>
+      <p>&copy; 2025 Accra Chamber of Commerce</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

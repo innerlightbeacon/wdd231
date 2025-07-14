@@ -1,0 +1,45 @@
+{
+    "members": [
+      {
+        "name": "Kofi's Electronics",
+        "address": "23 Ring Road Central, Accra",
+        "phone": "+233 20 111 2222",
+        "website": "https://kofiselectronics.com",
+        "membership": "Gold",
+        "logo": "images/kofi-electronics.webp"
+      },
+      {
+        "name": "Akua's Fashion House",
+        "address": "10 Oxford Street, Osu",
+        "phone": "+233 24 555 6789",
+        "website": "https://akuafashion.com",
+        "membership": "Silver",
+        "logo": "images/akua-fashion.webp"
+      },
+      {
+        "name": "Accra Eats",
+        "address": "15 Independence Ave, Accra",
+        "phone": "+233 27 333 4444",
+        "website": "https://accraeats.com",
+        "membership": "Gold",
+        "logo": "images/accra-eats.webp"
+      },
+      {
+        "name": "Ghana Green Farms",
+        "address": "45 Aburi Road, Accra",
+        "phone": "+233 26 987 6543",
+        "website": "https://ghanagreenfarms.org",
+        "membership": "Non-Profit",
+        "logo": "images/green-farms.webp"
+      },
+      {
+        "name": "TechSpark Ghana",
+        "address": "TechHub, Spintex Road, Accra",
+        "phone": "+233 54 888 9999",
+        "website": "https://techsparkgh.com",
+        "membership": "Silver",
+        "logo": "images/techspark.webp"
+      }
+    ]
+  }
+  
