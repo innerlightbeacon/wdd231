@@ -3,18 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Accra Chamber of Commerce Directory Page" />
+  <meta name="description" content="Discover Accra: Explore its vibrant history, demographics, culture, and local events." />
   <meta name="author" content="Jackson Osei Kumi" />
-  <title>Directory | Accra Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" href="styles/directory.css" />
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <title>Discover | Accra Chamber of Commerce</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/discover.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/darkmode.js" defer></script>
+  <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
   <header>
     <div class="logo">
@@ -25,9 +34,9 @@
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
       </ul>
     </nav>
     <div class="mode-toggle">
@@ -37,16 +46,46 @@
   </header>
 
   <main>
-    <section class="directory-controls">
-      <h2>Business Directory</h2>
-      <div class="view-toggle">
-        <button id="grid-view" class="active">Grid View</button>
-        <button id="list-view">List View</button>
-      </div>
+    <section class="intro">
+      <h2>Discover Accra</h2>
+      <p>Explore the capital city of Ghana — its rich history, cultural vibrance, diverse population, and local attractions.</p>
     </section>
 
-    <section id="directory" class="directory-grid">
-      <!-- Business cards will be injected here by JavaScript -->
+    <section class="history">
+      <h3>History of Accra</h3>
+      <p>Accra originated from a cluster of Ga fishing villages and later became the capital of the British Gold Coast. The city is known for its colonial architecture and its role in Ghana's independence movement.</p>
+    </section>
+
+    <section class="demographics">
+      <h3>Demographics</h3>
+      <ul>
+        <li><strong>Population:</strong> 2.3 million (metro)</li>
+        <li><strong>Languages:</strong> English (official), Ga, Twi, Ewe</li>
+        <li><strong>Religion:</strong> Christianity, Islam, Traditional</li>
+        <li><strong>Economy:</strong> Trade, Tech, Education, Tourism</li>
+      </ul>
+    </section>
+
+    <section class="events">
+      <h3>Local Events</h3>
+      <p>Accra hosts a variety of cultural celebrations and festivals including:</p>
+      <ul>
+        <li>Chale Wote Street Art Festival</li>
+        <li>Homowo Festival</li>
+        <li>Ghana Independence Day Parade</li>
+        <li>Food and Music Festivals</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h3>City Gallery</h3>
+      <div class="image-grid">
+        <img src="images/independence-arch.webp" alt="Independence Arch" loading="lazy">
+        <img src="images/makola-market.webp" alt="Makola Market" loading="lazy">
+        <img src="images/jamestown.webp" alt="Jamestown Lighthouse" loading="lazy">
+        <img src="images/art-centre.webp" alt="Art Centre" loading="lazy">
+        <img src="images/national-theatre.webp" alt="National Theatre" loading="lazy">
+      </div>
     </section>
   </main>
 

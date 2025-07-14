@@ -3,33 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Accra Chamber of Commerce - Promoting Business and Community in Accra, Ghana." />
+
+  <!-- Meta Information -->
+  <meta name="description" content="Explore Accra’s vibrant business community through the Chamber of Commerce. Connect, grow, and lead with local opportunities." />
   <meta name="author" content="Jackson Osei Kumi" />
-  <title>Home | Accra Chamber of Commerce</title>
   
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Accra Chamber of Commerce" />
+  <meta property="og:description" content="Empowering Accra's businesses with networking, resources, and support. Join us and grow your influence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jacksonkumi.github.io/wdd231/chamber/index.html" />
+  <meta property="og:image" content="https://jacksonkumi.github.io/wdd231/chamber/images/hero.jpg" />
+
+  <title>Home | Accra Chamber of Commerce</title>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/home.css" />
-  <link rel="stylesheet" href="styles/main.css" />
 
   <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/weather.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
-
 </head>
+
 <body>
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Accra Chamber Logo" />
       <h1>Accra Chamber of Commerce</h1>
     </div>
-    <button id="menu" aria-label="Menu">☰</button>
+    <button id="menu" aria-label="Open Menu">☰</button>
     <nav>
       <ul class="navigation">
         <li><a href="index.html" class="active">Home</a></li>
@@ -39,7 +51,7 @@
       </ul>
     </nav>
     <div class="mode-toggle">
-      <input type="checkbox" id="mode" name="mode" />
+      <input type="checkbox" id="mode" name="mode" aria-label="Toggle dark mode" />
     </div>
   </header>
 
@@ -62,17 +74,17 @@
       </div>
     </section>
 
-    <!-- Event Spotlight -->
+    <!-- Business Spotlight -->
     <section class="spotlight">
       <h3>Business Spotlight</h3>
       <div class="spotlight-cards">
         <article class="spotlight-card">
-          <img src="images/spotlight1.jpg" alt="Featured Business 1">
+          <img src="images/spotlight1.jpg" alt="Kwame's Tech Hub">
           <h4>Kwame's Tech Hub</h4>
           <p>Driving digital transformation in Accra since 2015.</p>
         </article>
         <article class="spotlight-card">
-          <img src="images/spotlight2.jpg" alt="Featured Business 2">
+          <img src="images/spotlight2.jpg" alt="Eco Market Ghana">
           <h4>Eco Market Ghana</h4>
           <p>Bringing sustainable products to your doorstep.</p>
         </article>

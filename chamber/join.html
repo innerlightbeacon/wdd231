@@ -3,25 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Join the Accra Chamber of Commerce" />
+
+  <!-- SEO -->
+  <meta name="description" content="Join the Accra Chamber of Commerce to grow your business, network with professionals, and gain access to valuable member benefits." />
   <meta name="author" content="Jackson Osei Kumi" />
+  <meta property="og:title" content="Join | Accra Chamber of Commerce" />
+  <meta property="og:description" content="Sign up for chamber membership and discover exclusive benefits for non-profit, silver, and gold tiers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:url" content="https://yourdomain.com/join.html" />
+
   <title>Join | Accra Chamber of Commerce</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/join.css" />
   <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/join.js" defer></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+  <script src="scripts/darkmode.js" defer></script>
 </head>
+
 <body>
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Accra Chamber Logo" />
       <h1>Accra Chamber of Commerce</h1>
     </div>
-    <button id="menu" aria-label="Menu">☰</button>
+    <button id="menu" aria-label="Toggle Navigation">☰</button>
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
@@ -31,6 +48,7 @@
       </ul>
     </nav>
     <div class="mode-toggle">
+      <label for="mode" aria-label="Toggle dark mode">🌙</label>
       <input type="checkbox" id="mode" name="mode" />
     </div>
   </header>
@@ -38,21 +56,21 @@
   <main>
     <section class="join-header">
       <h2>Become a Member</h2>
-      <p>Join the Accra Chamber of Commerce and enjoy a range of benefits including networking, training, and advertising opportunities.</p>
+      <p>Join the Accra Chamber of Commerce and enjoy benefits like networking events, business training, social media promos, and advertising opportunities.</p>
     </section>
 
     <section class="membership-benefits">
       <h3>Membership Levels</h3>
       <ul>
-        <li><strong>Non-Profit:</strong> Free directory listing, event access</li>
-        <li><strong>Silver:</strong> All non-profit benefits + social media promos & training</li>
-        <li><strong>Gold:</strong> All Silver benefits + advertising and sponsorship options</li>
+        <li><strong>Non-Profit:</strong> Free directory listing, access to events</li>
+        <li><strong>Silver:</strong> Includes all Non-Profit perks plus training & social media promotions</li>
+        <li><strong>Gold:</strong> All Silver perks plus advertising & sponsorship opportunities</li>
       </ul>
     </section>
 
     <section class="join-form-section">
       <h3>Application Form</h3>
-      <form id="join-form" method="get" action="">
+      <form id="join-form" method="get" action="#">
         <label for="firstName">First Name*</label>
         <input type="text" id="firstName" name="firstName" required />
 
