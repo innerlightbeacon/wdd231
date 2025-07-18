@@ -1,0 +1,36 @@
+// scripts/directory.js
+
+const membersURL = 'data/members.json';
+const cardsContainer = document.querySelector('#cards');
+
+async function fetchMembers() {
+  try {
+    const response = await fetch(membersURL);
+    if (!response.ok) throw new Error('Network response was not ok');
+
+    const data = await response.json();
+    displayMembers(data.members);
+  } catch (error) {
+    console.error('Fetching members failed:', error);
+  }
+}
+
+function displayMembers(members) {
+  cardsContainer.innerHTML = ''; // Clear existing cards
+  members.forEach((member, index) => {
+    const card = document.createElement('section');
+    card.classList.add('member-card', member.membership.toLowerCase());
+
+    card.innerHTML = `
+      <h3>${member.name}</h3>
+      <p><strong>Address:</strong> ${member.address}</p>
+      <p><strong>Phone:</strong> ${member.phone}</p>
+      <p><strong>Membership:</strong> ${member.membership}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
+
+    cardsContainer.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', fetchMembers);

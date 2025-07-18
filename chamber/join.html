@@ -4,41 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <meta name="description" content="Join the Accra Chamber of Commerce to grow your business, network with professionals, and gain access to valuable member benefits." />
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Join the Accra Chamber of Commerce to expand your network and grow your business with exclusive membership benefits." />
   <meta name="author" content="Jackson Osei Kumi" />
   <meta property="og:title" content="Join | Accra Chamber of Commerce" />
-  <meta property="og:description" content="Sign up for chamber membership and discover exclusive benefits for non-profit, silver, and gold tiers." />
-  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Sign up for membership with the Accra Chamber of Commerce and unlock benefits based on your level." />
   <meta property="og:image" content="images/logo.png" />
   <meta property="og:url" content="https://yourdomain.com/join.html" />
+  <meta property="og:type" content="website" />
 
   <title>Join | Accra Chamber of Commerce</title>
 
-  <!-- Fonts -->
+  <!-- Fonts & Favicon -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-  <!-- Stylesheets -->
+  <!-- Styles -->
   <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/join.css" />
   <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/join.css" />
 
   <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/join.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
 </head>
-
 <body>
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Accra Chamber Logo" />
       <h1>Accra Chamber of Commerce</h1>
     </div>
-    <button id="menu" aria-label="Toggle Navigation">☰</button>
+    <button id="menu" aria-label="Toggle navigation">☰</button>
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
@@ -54,48 +51,50 @@
   </header>
 
   <main>
-    <section class="join-header">
-      <h2>Become a Member</h2>
-      <p>Join the Accra Chamber of Commerce and enjoy benefits like networking events, business training, social media promos, and advertising opportunities.</p>
+    <section class="join-intro">
+      <h2>Join the Chamber</h2>
+      <p>Become a member of the Accra Chamber of Commerce and connect with professionals across Ghana. Enjoy networking events, business resources, and promotional opportunities tailored to your membership level.</p>
     </section>
 
-    <section class="membership-benefits">
+    <section class="membership-levels">
       <h3>Membership Levels</h3>
       <ul>
-        <li><strong>Non-Profit:</strong> Free directory listing, access to events</li>
-        <li><strong>Silver:</strong> Includes all Non-Profit perks plus training & social media promotions</li>
-        <li><strong>Gold:</strong> All Silver perks plus advertising & sponsorship opportunities</li>
+        <li><strong>Non-Profit:</strong> Free directory listing and access to events.</li>
+        <li><strong>Silver:</strong> All Non-Profit benefits, plus training sessions and social media features.</li>
+        <li><strong>Gold:</strong> All Silver perks plus advertising and sponsorship benefits.</li>
       </ul>
     </section>
 
     <section class="join-form-section">
       <h3>Application Form</h3>
-      <form id="join-form" method="get" action="#">
-        <label for="firstName">First Name*</label>
+      <form id="join-form" method="get" action="thankyou.html">
+        <label for="firstName">First Name<span>*</span></label>
         <input type="text" id="firstName" name="firstName" required />
 
-        <label for="lastName">Last Name*</label>
+        <label for="lastName">Last Name<span>*</span></label>
         <input type="text" id="lastName" name="lastName" required />
 
-        <label for="email">Email*</label>
+        <label for="email">Email<span>*</span></label>
         <input type="email" id="email" name="email" required />
 
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" />
+        <input type="tel" id="phone" name="phone" pattern="[\+]?[\d\s\-]+" />
 
-        <label for="business">Business Name*</label>
+        <label for="business">Business Name<span>*</span></label>
         <input type="text" id="business" name="business" required />
 
-        <label for="membershipLevel">Membership Level*</label>
+        <label for="membershipLevel">Membership Level<span>*</span></label>
         <select id="membershipLevel" name="membershipLevel" required>
-          <option value="">-- Please choose --</option>
+          <option value="">-- Please select --</option>
           <option value="non-profit">Non-Profit</option>
           <option value="silver">Silver</option>
           <option value="gold">Gold</option>
         </select>
 
         <label for="description">Business Description</label>
-        <textarea id="description" name="description" rows="4"></textarea>
+        <textarea id="description" name="description" rows="4" placeholder="Tell us about your organization..."></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
 
         <button type="submit">Submit Application</button>
       </form>
@@ -114,7 +113,7 @@
       <img src="images/linkedin.svg" alt="LinkedIn" />
     </div>
     <div class="project-info">
-      <p>WDD231 Class Project | Jackson Osei Kumi</p>
+      <p>WDD 231 Chamber Project | Jackson Osei Kumi</p>
       <p>&copy; 2025 Accra Chamber of Commerce</p>
       <p>Last Modified: <span id="lastModified"></span></p>
     </div>

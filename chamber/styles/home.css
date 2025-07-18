@@ -1,6 +1,6 @@
 /* styles/home.css */
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
   position: relative;
   display: grid;
@@ -14,6 +14,7 @@
   height: auto;
   object-fit: cover;
   display: block;
+  max-height: 500px;
 }
 
 .hero-text {
@@ -21,11 +22,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 2rem;
   text-align: center;
   border-radius: 10px;
+  max-width: 90%;
 }
 
 .cta-button {
@@ -38,18 +40,28 @@
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:focus {
   background-color: #005fa3;
+  transform: scale(1.05);
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
-/* Weather Section */
+/* WEATHER SECTION */
 .weather {
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: #e0f7fa;
   text-align: center;
+}
+
+.weather h3 {
+  font-size: 1.5rem;
+  color: #0077cc;
 }
 
 #weather-info {
@@ -58,11 +70,16 @@
   color: #333;
 }
 
-/* Spotlight Section */
+/* SPOTLIGHT SECTION */
 .spotlight {
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: #f9f9f9;
   text-align: center;
+}
+
+.spotlight h3 {
+  font-size: 1.5rem;
+  color: #222;
 }
 
 .spotlight-cards {
@@ -75,9 +92,14 @@
 .spotlight-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 1rem;
   text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-5px);
 }
 
 .spotlight-card img {
@@ -87,7 +109,13 @@
   border-radius: 8px;
 }
 
-/* CTA Section */
+.spotlight-card h4 {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  color: #0077cc;
+}
+
+/* CTA SECTION */
 .cta {
   background-color: #0077cc;
   color: #fff;
@@ -96,5 +124,23 @@
 }
 
 .cta h3 {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+/* RESPONSIVE IMPROVEMENTS */
+@media screen and (max-width: 600px) {
+  .hero-text {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .spotlight-card {
+    font-size: 0.95rem;
+  }
 }

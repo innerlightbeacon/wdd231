@@ -1,0 +1,158 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #0077cc;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.discover {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.discover-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.discover-card:hover {
+  transform: translateY(-5px);
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.discover-card h3 {
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #0077cc;
+}
+
+.discover-card p {
+  padding: 0 1rem 1rem;
+}
+
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav a.active {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+body.dark-mode .discover-card {
+  background-color: #1f1f1f;
+  border-color: #444;
+}
+
+body.dark-mode .discover-card h3 {
+  color: #66ccff;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}

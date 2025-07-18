@@ -1,7 +1,17 @@
 /* styles/discover.css */
 
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --card-bg-dark: #1e1e1e;
+  --text-color-dark: #f0f0f0;
+  --highlight-color: #94d2bd;
+}
+
 main {
-  padding: 2rem;
+  padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -13,32 +23,35 @@ main h2 {
   text-align: center;
   color: var(--primary-color);
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 section {
   background-color: var(--card-bg);
   padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease;
 }
 
 section h3 {
   color: var(--secondary-color);
-  margin-bottom: 1rem;
   font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 section p,
 section li {
   color: var(--text-color);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .demographics ul,
 .events ul {
-  list-style: disc;
+  list-style-type: disc;
   padding-left: 1.5rem;
+  margin: 0.5rem 0;
 }
 
 .image-grid {
@@ -53,16 +66,16 @@ section li {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, outline 0.3s ease;
 }
 
 .image-grid img:hover,
 .image-grid img:focus {
-  transform: scale(1.03);
+  transform: scale(1.05);
   outline: 2px solid var(--primary-color);
 }
 
-/* Responsive adjustments */
+/* Mobile-first responsive refinements */
 @media (max-width: 768px) {
   main {
     padding: 1rem;
@@ -71,9 +84,13 @@ section li {
   section h3 {
     font-size: 1.25rem;
   }
+
+  main h2 {
+    font-size: 1.75rem;
+  }
 }
 
-/* Dark mode */
+/* Dark mode support */
 body.dark main h2,
 body.dark section h3 {
   color: var(--highlight-color);

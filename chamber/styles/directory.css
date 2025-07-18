@@ -1,5 +1,20 @@
 /* styles/directory.css */
 
+:root {
+  --primary-color: #004b8d;
+  --secondary-color: #f39c12;
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Main layout */
 main {
   padding: 2rem;
   max-width: 1200px;
@@ -29,24 +44,14 @@ h2 {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.view-toggle button:hover {
+.view-toggle button:hover,
+.view-toggle button:focus {
   background-color: var(--secondary-color);
-}
-
-/* Common card styles */
-#directory section {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
-}
-
-#directory section:hover {
-  transform: translateY(-4px);
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 /* Grid View */
@@ -58,13 +63,6 @@ h2 {
 
 .directory-grid section {
   text-align: center;
-}
-
-.directory-grid img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-  border-radius: 50%;
 }
 
 /* List View */
@@ -79,6 +77,29 @@ h2 {
   align-items: center;
   gap: 1.5rem;
   padding: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Card Styles */
+#directory section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+#directory section:hover {
+  transform: translateY(-4px);
+}
+
+/* Images */
+.directory-grid img,
+.directory-list img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .directory-list img {
@@ -87,19 +108,10 @@ h2 {
   border-radius: 8px;
 }
 
-.directory-list h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-}
-
-.directory-list a {
-  display: inline-block;
-  margin-top: 0.3rem;
-}
-
 section h3 {
   color: var(--primary-color);
   margin-bottom: 0.4rem;
+  font-size: 1.2rem;
 }
 
 section p,
@@ -114,13 +126,28 @@ section a {
   color: var(--secondary-color);
 }
 
-section a:hover {
+section a:hover,
+section a:focus {
   text-decoration: underline;
 }
 
-/* Dark Mode Support (if you are using mode toggle) */
+/* Dark Mode Support */
 body.dark-mode #directory section {
   background-color: #222;
   color: #eee;
   border-color: #444;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Accessibility Roles (optional but recommended) */
+#directory {
+  display: block;
+  role: region;
+  aria-label: "Business Directory Listings";
 }

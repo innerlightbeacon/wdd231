@@ -1,45 +1,68 @@
 {
-    "members": [
-      {
-        "name": "Kofi's Electronics",
-        "address": "23 Ring Road Central, Accra",
-        "phone": "+233 20 111 2222",
-        "website": "https://kofiselectronics.com",
-        "membership": "Gold",
-        "logo": "images/kofi-electronics.webp"
-      },
-      {
-        "name": "Akua's Fashion House",
-        "address": "10 Oxford Street, Osu",
-        "phone": "+233 24 555 6789",
-        "website": "https://akuafashion.com",
-        "membership": "Silver",
-        "logo": "images/akua-fashion.webp"
-      },
-      {
-        "name": "Accra Eats",
-        "address": "15 Independence Ave, Accra",
-        "phone": "+233 27 333 4444",
-        "website": "https://accraeats.com",
-        "membership": "Gold",
-        "logo": "images/accra-eats.webp"
-      },
-      {
-        "name": "Ghana Green Farms",
-        "address": "45 Aburi Road, Accra",
-        "phone": "+233 26 987 6543",
-        "website": "https://ghanagreenfarms.org",
-        "membership": "Non-Profit",
-        "logo": "images/green-farms.webp"
-      },
-      {
-        "name": "TechSpark Ghana",
-        "address": "TechHub, Spintex Road, Accra",
-        "phone": "+233 54 888 9999",
-        "website": "https://techsparkgh.com",
-        "membership": "Silver",
-        "logo": "images/techspark.webp"
-      }
-    ]
-  }
-  
+  "members": [
+    {
+      "name": "Kofi's Electronics",
+      "address": "23 Ring Road Central, Accra",
+      "phone": "+233 20 111 2222",
+      "website": "https://kofiselectronics.com",
+      "membership": "Gold",
+      "logo": "images/members/kofi-electronics.webp"
+    },
+    {
+      "name": "Akua's Fashion House",
+      "address": "10 Oxford Street, Osu",
+      "phone": "+233 24 555 6789",
+      "website": "https://akuafashion.com",
+      "membership": "Silver",
+      "logo": "images/members/akua-fashion.webp"
+    },
+    {
+      "name": "Accra Eats",
+      "address": "15 Independence Ave, Accra",
+      "phone": "+233 27 333 4444",
+      "website": "https://accraeats.com",
+      "membership": "Gold",
+      "logo": "images/members/accra-eats.webp"
+    },
+    {
+      "name": "Ghana Green Farms",
+      "address": "45 Aburi Road, Accra",
+      "phone": "+233 26 987 6543",
+      "website": "https://ghanagreenfarms.org",
+      "membership": "Non-Profit",
+      "logo": "images/members/green-farms.webp"
+    },
+    {
+      "name": "TechSpark Ghana",
+      "address": "TechHub, Spintex Road, Accra",
+      "phone": "+233 54 888 9999",
+      "website": "https://techsparkgh.com",
+      "membership": "Silver",
+      "logo": "images/members/techspark.webp"
+    },
+    {
+      "name": "Bisa Legal Aid",
+      "address": "12 High Street, Accra",
+      "phone": "+233 50 234 5678",
+      "website": "https://bisalegal.org",
+      "membership": "Non-Profit",
+      "logo": "images/members/bisa-legal.webp"
+    },
+    {
+      "name": "Pure Water Ghana Ltd",
+      "address": "Industrial Area, Tema",
+      "phone": "+233 55 678 1234",
+      "website": "https://purewatergh.com",
+      "membership": "Bronze",
+      "logo": "images/members/pure-water.webp"
+    },
+    {
+      "name": "Kwame's Coding Bootcamp",
+      "address": "8 Labone Crescent, Accra",
+      "phone": "+233 57 456 7890",
+      "website": "https://kwamecodes.com",
+      "membership": "Gold",
+      "logo": "images/members/kwame-coding.webp"
+    }
+  ]
+}

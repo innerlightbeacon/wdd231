@@ -3,16 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover Accra – Explore the city's culture, history, and events." />
+
+  <!-- SEO & Social Metadata -->
+  <meta name="description" content="Discover Accra – Explore the city's culture, history, events, and photo gallery with the Accra Chamber of Commerce." />
   <meta name="author" content="Jackson Osei Kumi" />
-  <title>Discover | Accra Chamber of Commerce</title>
+  <meta property="og:title" content="Discover Accra | Accra Chamber of Commerce" />
+  <meta property="og:description" content="Experience the culture, festivals, landmarks, and vibrancy of Accra with the Chamber of Commerce." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/discover.html" />
+  <meta property="og:image" content="images/og-image.webp" />
+
+  <title>Discover Accra | Accra Chamber of Commerce</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/discover.css" />
   <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -21,7 +32,7 @@
       <img src="images/logo.webp" alt="Accra Chamber Logo" />
       <h1>Accra Chamber of Commerce</h1>
     </div>
-    <button id="menu" aria-label="Menu">☰</button>
+    <button id="menu" aria-label="Toggle navigation menu">☰</button>
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
@@ -31,7 +42,7 @@
       </ul>
     </nav>
     <div class="mode-toggle">
-      <label for="mode">🌙</label>
+      <label for="mode" aria-label="Toggle dark mode">🌙</label>
       <input type="checkbox" id="mode" name="mode" />
     </div>
   </header>
@@ -42,36 +53,42 @@
     <section class="history">
       <h3>History</h3>
       <p>
-        Accra is one of the oldest and most vibrant cities in West Africa. From its colonial heritage to becoming the capital of Ghana, its journey has been one of cultural richness and economic resilience.
+        Accra is one of the oldest and most vibrant cities in West Africa. From its colonial roots to becoming the capital of Ghana, the city embodies cultural richness and economic resilience.
       </p>
     </section>
 
     <section class="demographics">
       <h3>Demographics</h3>
       <ul>
-        <li>Population: 2.5 million+</li>
-        <li>Languages: English, Ga, Twi, Ewe</li>
-        <li>Main Religions: Christianity, Islam, Traditional</li>
-        <li>Major Industries: Trade, Services, Tourism, Real Estate</li>
+        <li><strong>Population:</strong> 2.5 million+</li>
+        <li><strong>Languages:</strong> English, Ga, Twi, Ewe</li>
+        <li><strong>Main Religions:</strong> Christianity, Islam, Traditional</li>
+        <li><strong>Major Industries:</strong> Trade, Services, Tourism, Real Estate</li>
       </ul>
     </section>
 
     <section class="events">
       <h3>Community Events</h3>
       <p>
-        Annual festivals like Homowo, the Chale Wote Street Art Festival, and local durbars showcase the city's unique traditions and creativity.
+        Accra hosts vibrant events like the <strong>Homowo Festival</strong>, <strong>Chale Wote Street Art Festival</strong>, and traditional durbars, showcasing creativity, history, and cultural pride.
       </p>
     </section>
 
     <section class="gallery">
       <h3>City Gallery</h3>
       <div class="image-montage">
-        <img src="images/independence-arch.webp" alt="Independence Arch" loading="lazy">
-        <img src="images/makola-market.webp" alt="Makola Market" loading="lazy">
-        <img src="images/art-centre.webp" alt="Art Centre" loading="lazy">
-        <img src="images/jamestown-lighthouse.webp" alt="Jamestown Lighthouse" loading="lazy">
-        <img src="images/national-theatre.webp" alt="National Theatre" loading="lazy">
+        <img src="images/independence-arch.webp" alt="Independence Arch in Accra" loading="lazy" />
+        <img src="images/makola-market.webp" alt="Makola Market" loading="lazy" />
+        <img src="images/art-centre.webp" alt="Arts Centre in Accra" loading="lazy" />
+        <img src="images/jamestown-lighthouse.webp" alt="Jamestown Lighthouse" loading="lazy" />
+        <img src="images/national-theatre.webp" alt="National Theatre" loading="lazy" />
       </div>
+    </section>
+
+    <!-- Optional: Page View Counter -->
+    <section class="visit-counter">
+      <h3>Your Visit</h3>
+      <p>You have visited this page <span id="visitCount">0</span> time(s).</p>
     </section>
   </main>
 
@@ -92,5 +109,8 @@
       <p>Last Modified: <span id="lastModified"></span></p>
     </div>
   </footer>
+
+  <!-- Optional: JS file for local storage or page counter -->
+  <script src="scripts/visitCounter.js" defer></script>
 </body>
 </html>

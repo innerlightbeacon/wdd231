@@ -8,7 +8,7 @@
   <meta name="description" content="Explore business opportunities with the Accra Chamber of Commerce. Connect, grow, and thrive in a vibrant economic environment." />
   <meta name="author" content="Jackson Osei Kumi" />
   <meta property="og:title" content="Home | Accra Chamber of Commerce" />
- <meta property="og:description" content="Discover local business opportunities, events, and resources. Join the Accra Chamber to connect and grow in Ghana's vibrant capital." />
+  <meta property="og:description" content="Discover local business opportunities, events, and resources. Join the Accra Chamber to connect and grow in Ghana's vibrant capital." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourdomain.com/index.html" />
   <meta property="og:image" content="images/og-image.webp" />
@@ -35,10 +35,10 @@
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Accra Chamber Logo" />
-      <h1>Welcome to the Accra Chamber of Commerce</h1>
+      <p class="site-title">Accra Chamber of Commerce</p>
     </div>
     <button id="menu" aria-label="Menu">☰</button>
-    <nav>
+    <nav role="navigation">
       <ul class="navigation">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
@@ -52,7 +52,6 @@
   </header>
 
   <main>
-    <!-- ✅ Required h1 for accessibility and SEO -->
     <h1>Welcome to the Accra Chamber of Commerce</h1>
 
     <!-- Hero Section -->
@@ -73,17 +72,17 @@
       </div>
     </section>
 
-    <!-- Event Spotlight -->
+    <!-- Business Spotlight -->
     <section class="spotlight">
       <h3>Business Spotlight</h3>
       <div class="spotlight-cards">
         <article class="spotlight-card">
-          <img src="images/spotlight1.webp" alt="Kwame's Tech Hub">
+          <img src="images/spotlight1.webp" alt="Kwame's Tech Hub" loading="lazy">
           <h4>Kwame's Tech Hub</h4>
           <p>Driving digital transformation in Accra since 2015.</p>
         </article>
         <article class="spotlight-card">
-          <img src="images/spotlight2.webp" alt="Eco Market Ghana">
+          <img src="images/spotlight2.webp" alt="Eco Market Ghana" loading="lazy">
           <h4>Eco Market Ghana</h4>
           <p>Bringing sustainable products to your doorstep.</p>
         </article>
@@ -104,9 +103,9 @@
       <p>Email: info@accracoc.org | Tel: +233 555 123 456</p>
     </div>
     <div class="social">
-      <img src="images/github.svg" alt="GitHub" />
-      <img src="images/twitter.svg" alt="Twitter" />
-      <img src="images/linkedin.svg" alt="LinkedIn" />
+      <img src="images/github.svg" alt="GitHub" aria-label="GitHub Profile" />
+      <img src="images/twitter.svg" alt="Twitter" aria-label="Twitter Profile" />
+      <img src="images/linkedin.svg" alt="LinkedIn" aria-label="LinkedIn Profile" />
     </div>
     <div class="project-info">
       <p>WDD231 Class Project | Jackson Osei Kumi</p>
