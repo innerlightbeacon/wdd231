@@ -1,17 +1,42 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 2rem;
-  }
-  
-  h1 {
-    color: navy;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+h1 {
+  color: navy;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Modal styles */
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  background: #eee;
+  cursor: pointer;
+}
