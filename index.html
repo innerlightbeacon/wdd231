@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Information -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 231 course home page for frontend development projects." />
+  <meta name="description" content="WDD 231 frontend development projects by Jackson Osei Kumi." />
   <meta name="author" content="Jackson Osei Kumi" />
-  <title>WDD 231 Home Jackson Osei Kumi</title>
+  <title>WDD 231 | Jackson Osei Kumi</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-  <!-- Open Graph Meta Tags for Facebook -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="WDD 231 Home | Jackson Osei Kumi" />
   <meta property="og:description" content="Frontend development projects and portfolio for the WDD 231 course by Jackson Osei Kumi." />
   <meta property="og:image" content="https://innerlightbeacon.github.io/wdd231/images/og-image.jpg" />
   <meta property="og:url" content="https://innerlightbeacon.github.io/wdd231/" />
   <meta property="og:type" content="website" />
 
-  <!-- Normalize & Custom Stylesheets -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/small.css" />
   <link rel="stylesheet" href="styles/larger.css" />
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- JavaScript Files -->
+  <!-- JavaScript -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/last-modified.js" defer></script>
   <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
   <header>
-    <img src="images/logo.png" alt="Site Logo" width="50">
-    <span>Jackson Osei Kumi</span>
-    <button id="menu" aria-label="Open Navigation Menu">☰</button>
+    <img src="images/logo.png" alt="Site Logo" width="50" height="50" loading="lazy" />
+    <span class="site-title">Jackson Osei Kumi</span>
+    <button id="menu" aria-label="Toggle Navigation Menu">☰</button>
   </header>
 
-  <!-- Main Navigation -->
-  <nav>
+  <!-- Navigation Menu -->
+  <nav id="nav" class="closed">
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="chamber/index.html">Chamber</a></li>
-      <li><a href="final-index.html">Final</a></li>
+      <li><a href="finalproject.html">Final Project</a></li>
       <li><a href="#">About</a></li>
     </ul>
   </nav>
 
   <main>
     <h1>Home</h1>
+
+    <!-- Certificate Courses Section -->
     <section>
       <h2>Certificate Courses</h2>
       <div class="filters">
@@ -63,34 +67,42 @@
       <p id="credit-total"></p>
     </section>
 
+    <!-- About Section -->
     <section>
       <h2>About This Site</h2>
       <p>This site is built for the WDD 231 course and showcases dynamic front-end development techniques using HTML, CSS, and JavaScript.</p>
     </section>
 
+    <!-- Technologies Used Section -->
     <section>
       <h2>Technologies Used</h2>
       <ul>
         <li>HTML5 & Semantic Layout</li>
         <li>CSS Grid & Flexbox</li>
         <li>Responsive Design Principles</li>
-        <li>JavaScript ES6+</li>
+        <li>JavaScript (ES6+)</li>
       </ul>
     </section>
   </main>
 
+  <!-- Footer Section -->
   <footer>
     <div class="social-links">
-      <a href="https://www.github.com/innerlightbeacon" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/jackson-kumi-245a71197" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-      <a href="https://twitter.com/yourhandle" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://github.com/innerlightbeacon" target="_blank" rel="noopener">
+        <img src="images/github.svg" alt="GitHub Profile" width="24" height="24" />
+      </a>
+      <a href="https://linkedin.com/in/jackson-kumi-245a71197" target="_blank" rel="noopener">
+        <img src="images/linkedin.svg" alt="LinkedIn Profile" width="24" height="24" />
+      </a>
+      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">
+        <img src="images/twitter.svg" alt="Twitter Profile" width="24" height="24" />
+      </a>
     </div>
-    <p>&copy; <span id="year"></span> | Jackson Osei Kumi | Ghana</p>
+    <p>&copy; <span id="year"></span> Jackson Osei Kumi | Ghana</p>
     <p id="lastModified"></p>
   </footer>
 
-  <!-- ✅ Modal dialog for course details -->
+  <!-- Course Detail Modal -->
   <dialog id="course-details"></dialog>
-
 </body>
 </html>
