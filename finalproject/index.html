@@ -4,24 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ghana Street Food</title>
-  <link rel="stylesheet" href="styles/index.css" />
+
+  <!-- Meta Tags -->
   <meta name="description" content="Explore the rich and delicious street food culture of Ghana. Discover popular dishes, their origins, and where to find them." />
   <meta name="author" content="Jackson Osei Kumi" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/normalize.css" />
+  <link rel="stylesheet" href="../styles/small.css" />
+  <link rel="stylesheet" href="../styles/larger.css" />
+  <link rel="stylesheet" href="styles/index.css" /> <!-- Optional: Project-specific styles -->
+
+  <!-- JS -->
+   <script src="scripts/navigation.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
+
 <body>
   <header>
-    <div class="container">
-      <h1>Ghana Street Food</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="dishes.html">Dishes</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <img src="../images/logo.png" alt="Site Logo" width="50" height="50" loading="lazy" />
+    <span class="site-title">Ghana Street Food</span>
+    <button id="menu" aria-label="Toggle Navigation Menu">☰</button>
   </header>
+
+  <!-- Navigation -->
+  <nav id="nav" class="closed">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" class="active">Final Project</a></li>
+      <li><a href="dishes.html">Dishes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <main>
     <!-- Hero Section -->
@@ -37,7 +52,7 @@
     <section class="intro">
       <div class="container">
         <h2>Why Ghana Street Food?</h2>
-        <p>Street food in Ghana is more than just a meal—it's a way of life. It's how we connect, celebrate, and savor our culture. Whether it's a roadside waakye joint or a night market kebab stand, each bite tells a story.</p>
+        <p>Street food in Ghana is more than just a meal—it's a way of life. Whether it's a roadside waakye joint or a night market kebab stand, each bite tells a story.</p>
       </div>
     </section>
 
@@ -47,17 +62,17 @@
         <h2>Popular Street Foods</h2>
         <div class="dishes-grid">
           <figure class="dish-card">
-            <img src="images/kelewele.jpg" alt="Plate of spicy Kelewele (fried plantains)" />
+            <img src="images/kelewele.jpeg" alt="Plate of spicy Kelewele (fried plantains)" />
             <figcaption><h3>Kelewele</h3></figcaption>
           </figure>
 
           <figure class="dish-card">
-            <img src="images/chinchinga.jpg" alt="Grilled Chinchinga skewers on a plate" />
+            <img src="images/chinchinga.jpeg" alt="Grilled Chinchinga skewers on a plate" />
             <figcaption><h3>Chinchinga</h3></figcaption>
           </figure>
 
           <figure class="dish-card">
-            <img src="images/waakye.jpg" alt="Waakye served with egg, spaghetti, and shito" />
+            <img src="images/waakye.jpeg" alt="Waakye served with egg, spaghetti, and shito" />
             <figcaption><h3>Waakye</h3></figcaption>
           </figure>
         </div>
@@ -68,10 +83,8 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Ghana Street Food | Jackson Osei Kumi. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Ghana Street Food | Jackson Osei Kumi. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>

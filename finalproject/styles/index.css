@@ -1,0 +1,160 @@
+/* ===== Reset and base styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #d62828;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: #b22222; /* 🔴 Updated nav background for visibility */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #8b0000; /* Darker red on hover */
+  text-decoration: underline;
+}
+
+/* ===== Main ===== */
+main {
+  padding: 2rem 0;
+}
+
+h2 {
+  color: #d62828;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Cards/Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+/* ===== Form ===== */
+form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #003049;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #14002e;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

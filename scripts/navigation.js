@@ -1,10 +1,8 @@
-// scripts/navigation.js
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.getElementById('menu');
+  const nav = document.getElementById('nav');
 
-// Toggle the navigation menu for small screens
-const hamburger = document.querySelector("#menu");
-const nav = document.querySelector("nav ul");
-
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  hamburger.classList.toggle("open");
+  menu.addEventListener('click', () => {
+    nav.classList.toggle('closed');
+  });
 });
