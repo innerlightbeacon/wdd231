@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
   <meta name="description" content="Learn about the Ghana Street Food project, our mission, values, and story." />
   <meta name="author" content="Jackson Osei Kumi" />
   <title>About Us | Ghana Street Food</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles/about.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
   <header>
     <h1>Ghana Street Food</h1>
     <nav>
       <ul>
+        <!-- Fixed: direct relative links without stacking pages -->
         <li><a href="index.html">Home</a></li>
         <li><a href="dishes.html">Dishes</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="about.html" aria-current="page" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -43,12 +52,12 @@
     <section class="story">
       <h3>Our Story</h3>
       <p>Inspired by the colors, aromas, and stories from the streets of Accra to Tamale, this site brings you closer to the heart of Ghanaian street food. What began as a school project has grown into a passion to preserve and promote our culinary identity.</p>
-      <img src="images/street-food.webp" alt="Vibrant Ghanaian street food scene" loading="lazy" width="600" height="400">
+      <img src="images/street-food.jpeg" alt="Vibrant Ghanaian street food scene" loading="lazy" width="600" height="400">
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Ghana Street Food |  Jackson Osei Kumi</p>
+    <p>&copy; <span id="year"></span> Ghana Street Food | Jackson Osei Kumi</p>
   </footer>
 
   <script src="scripts/main.js" defer></script>
